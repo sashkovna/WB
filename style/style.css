@@ -1,0 +1,779 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #331A2F;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    color: #331A2F;
+}
+
+body {
+    padding: 14px 0 0;
+    margin: 0;
+    background-image: url("/img/l-ellipse.svg"), url("/img/r-ellipse.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top 400px right;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 55px;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.container {
+    max-width: 1920px;
+    padding-left: 195px;
+    padding-right: 195px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Header*/
+.header {
+    margin-bottom: 66px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header__item {
+    flex: 1 1 33%;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 31px;
+}
+
+.logo {
+    max-width: 241px;
+    margin-right: 19px;
+}
+
+.logo-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(51, 26, 47, 0.9);
+    padding-left: 25px;
+    border-left: 1px solid rgba(51, 26, 47, 0.5);
+}
+
+.menu__list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#select {
+    width: 145px;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #331A2F;
+    appearance: none;
+    background: url("/img/icon/select.svg") no-repeat right center;
+}
+
+.header__info {
+    display: flex;
+    order: 10;
+    margin-left: auto;
+    gap: 91px;
+    align-items: center;
+}
+
+.header__info_phone_link {
+    display: block;
+    white-space: nowrap;
+    position: relative;
+    padding-left: 29px;
+}
+
+.header__info_phone_link::before {
+    content: url("/img/icon/phone.svg");
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 19px;
+}
+
+.header__info_button {
+    position: relative;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    color: white;
+    padding: 4px 32px 5px 69px;
+    background-color: #CF51CE;
+    border: none;
+    border-radius: 12px;
+}
+
+.header__info_button::before {
+    position: absolute;
+    content: url("/img/icon/enter.svg");
+    width: 23px;
+    height: 23px;
+    left: 20%;
+    top: 15%;
+}
+
+/*Learning*/
+.learning {
+    margin-bottom: 147px;
+}
+
+.learning_container {
+    display: flex;
+    gap: 42px;
+}
+
+.learning__info {
+    max-width: 880px;
+}
+
+.learning__menu_item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(51, 26, 47, 0.5);
+}
+
+.violet {
+    color: #CF51CE;
+}
+
+.learning__menu_header {
+    margin-bottom: 22px;
+}
+
+.learning__menu_price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 25px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: rgba(51, 26, 47, 0.8);
+}
+
+.price-violet {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 29px;
+}
+
+.description {
+    color: rgba(51, 26, 47, 0.8);
+}
+
+.description_margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.learning__superman {
+    background: url("/img/stars.png") no-repeat bottom center;
+    background-size: contain;
+}
+
+/*Story*/
+.story {
+    margin-bottom: 140px;
+}
+
+.story__container {
+    max-width: 1320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story__header {
+    max-width: 840px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+
+.story__header-api {
+    display: none;
+}
+
+.story__list_item {
+    display: flex;
+    gap: 82px;
+    align-items: center;
+}
+
+.description-mb {
+    margin-bottom: 15px;
+}
+
+/*Learning_marketplace*/
+.learning_marketplace {
+    margin-bottom: 131px;
+}
+
+.learning_marketplace__header {
+    text-align: center;
+    max-width: 705px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.underline {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 7px;
+    background-image: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+    border-radius: 5px;
+}
+
+.learning_marketplace__description {
+    text-align: center;
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 85px;
+}
+
+.learning_marketplace__list {
+    display: flex;
+    gap: 123px;
+}
+
+.learning_marketplace__list_item {
+    flex: 1 1 25%;
+}
+
+.bg-target {
+    width: 70px;
+    height: 70px;
+    background: url("/img/icon/css_sprites.png") -35px -170px;
+}
+
+.bg-site {
+    width: 70px;
+    height: 70px;
+    background: url('/img/icon/css_sprites.png') -175px -170px;
+}
+
+.bg-friends {
+    width: 70px;
+    height: 70px;
+    background: url('/img/icon/css_sprites.png') -175px -30px;
+}
+
+.bg-icons {
+    width: 70px;
+    height: 70px;
+    background: url('/img/icon/css_sprites.png') -35px -30px;
+}
+
+.item_header {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.item_description {
+    font-size: 18px;
+}
+
+@media (max-width: 1720px) {
+    .container {
+        padding-right: 100px;
+        padding-left: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1660px) {
+    .logo {
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 1520px) {
+    .learning_marketplace__list {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1420px) {
+    body {
+        background-image: url("/img/l-ellipse.svg");
+        background-repeat: no-repeat;
+        background-position: top left -50px;
+    }
+
+    .container {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 65px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    body {
+        background-position: top -30px left -70px;
+    }
+
+    .container {
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        height: 62px;
+    }
+
+    .logo {
+        max-width: 187px;
+    }
+
+    .logo-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .menu__list {
+        gap: 40px;
+    }
+
+    #select {
+        width: 115px;
+        font-size: 18px;
+    }
+
+    .header__info_button {
+        font-size: 18px;
+    }
+
+    .learning__menu {
+        margin-bottom: 15px;
+    }
+
+    .learning__menu_price {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .learning__img {
+        width: 435px;
+        height: 435px;
+    }
+
+    .learning__superman {
+        background-position: center;
+    }
+
+    .learning {
+        margin-bottom: 77px;
+    }
+
+    .story__header {
+        width: 652px;
+        margin-bottom: 85px;
+    }
+
+    .story__container {
+        max-width: 995px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story_img {
+        width: 38%;
+    }
+
+    .learning_marketplace__description {
+        max-width: 684px;
+    }
+
+    .learning_marketplace__list {
+        gap: 88px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .header__container {
+        gap: 20px;
+    }
+
+    .header__item {
+        flex: auto;
+    }
+
+    .menu__list {
+        gap: 20px;
+    }
+
+    .header__info {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1095px) {
+    .header__info_phone {
+        display: none;
+    }
+
+    .header__logo {
+        width: 372px;
+    }
+
+    .logo {
+        max-width: 180px;
+    }
+
+    .header__info {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url("/img/superman.png") no-repeat right -170px top 330px;
+        background-size: 410px;
+    }
+
+    .container {
+        padding-right: 23px;
+        padding-left: 23px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        margin-bottom: 46px;
+    }
+
+    .header__logo {
+        width: 300px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__info {
+        justify-content: center;
+    }
+
+    .header__burger {
+        display: block;
+        order: 10;
+    }
+
+    .learning__superman {
+        display: none;
+    }
+
+    .learning__menu_price {
+        margin-top: 18px;
+        margin-bottom: 17px;
+    }
+
+    .descriptions {
+        width: 70%;
+    }
+
+    .story__header-trust {
+        display: none;
+    }
+
+    .story__header-api {
+        display: block;
+    }
+
+    .story__list_item {
+        gap: 40px;
+    }
+
+    .story__list_item:first-child {
+        margin-bottom: 60px;
+    }
+
+    .story {
+        margin-bottom: 120px;
+    }
+
+    .learning_marketplace__header {
+        margin-bottom: 25px;
+    }
+
+    .learning_marketplace__description {
+        margin-bottom: 80px;
+    }
+
+    .learning_marketplace__list {
+        width: 570px;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .item_header {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .item_description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    body {
+        background: url("/img/superman.png") no-repeat right -115px top 115px;
+        background-size: 245px;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        height: 36px;
+        margin-bottom: 40px;
+    }
+
+    .header__container {
+        height: 36px;
+    }
+
+    .header__item {
+        flex: 1 1 30%;
+    }
+
+    .header__logo {
+        width: 140px;
+        display: block;
+        margin-right: 0;
+    }
+
+    .logo {
+        width: 140px;
+        height: 32px;
+        margin-right: 0;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .header__info_button {
+        padding-right: 20px;
+        padding-left: 40px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .header__info_button::before {
+        left: 10%;
+    }
+
+    .learning__menu {
+        margin-bottom: 44px;
+    }
+
+    .learning__menu_header {
+        margin-bottom: 24px;
+        width: 70%;
+    }
+
+    .descriptions {
+        width: 100%;
+        order: 1;
+    }
+
+    .learning {
+        margin-bottom: 85px;
+    }
+
+    .story {
+        margin-bottom: 100px;
+    }
+
+    .story__header {
+        width: 332px;
+    }
+
+    .story__list_item {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .story__list_item:first-child {
+        margin-bottom: 40px;
+    }
+
+
+    .description-mb {
+        margin-bottom: 10px;
+    }
+
+    .story_img {
+        width: 100%;
+    }
+
+    .learning_marketplace__description {
+        margin-bottom: 50px;
+    }
+
+    .learning_marketplace__list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 260px;
+        gap: 40px;
+    }
+
+    .learning_marketplace__list_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item_header {
+        text-align: center;
+    }
+
+    .item_description {
+        text-align: center;
+    }
+}
